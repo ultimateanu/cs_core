@@ -1,0 +1,2 @@
+
+build -c opt --ignore_unsupported_sandboxing
