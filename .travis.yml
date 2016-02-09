@@ -1,6 +1,9 @@
 jdk:
   - oraclejdk8
 
+compiler:
+  - gcc
+
 addons:
   sources:
     - ubuntu-toolchain-r-test
