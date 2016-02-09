@@ -12,8 +12,8 @@ addons:
       - zip
       - zlib1g-dev
       - unzip
-      - wget
-      - zlib1g-dev
+        #- wget
+        #- zlib1g-dev
       - g++-4.8
 
 before_install:
@@ -25,4 +25,4 @@ install:
 
 script:
   - sudo mv /usr/bin/gcc-4.8 /usr/bin/gcc  # hacky way to make sure we have a recent compiler
-  - bazel run data_structures:demo
+  - bazel build ...
