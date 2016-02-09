@@ -15,13 +15,12 @@ addons:
       - unzip
 
 before_install:
-  - wget 'https://github.com/bazelbuild/bazel/releases/download/0.1.4/bazel-0.1.4-installer-linux-x86_64.sh'
-  # TODO: add hash check?
+  - wget 'https://github.com/bazelbuild/bazel/releases/download/0.1.4/bazel-0.1.4-installer-linux-x86_64.sh'  # TODO: add hash check?
   - chmod +x 'bazel-0.1.4-installer-linux-x86_64.sh'
+  - sudo mv /usr/bin/gcc-4.8 /usr/bin/gcc  # hacky way to make sure we have a recent compiler
 
 install:
   - ./bazel-0.1.4-installer-linux-x86_64.sh --user
 
 script:
-  - sudo mv /usr/bin/gcc-4.8 /usr/bin/gcc  # hacky way to make sure we have a recent compiler
   - bazel build ...
