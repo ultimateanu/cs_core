@@ -23,7 +23,7 @@ before_install:
   - ./bazel-0.1.4-installer-linux-x86_64.sh --user
 
 script:
-  - gcc --version
-  - g++ --version
+  - /usr/bin/gcc --version
+  - ls /usr/bin
   - bazel build ...
     #- bazel build --verbose_failures --spawn_strategy=standalone --genrule_strategy=standalone data_structures:demo
