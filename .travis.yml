@@ -1,1 +1,10 @@
 language: cpp
+
+addons:
+  apt:
+    packages:
+      - pkg-config
+      - zip
+      - g++
+      - zlib1g-dev
+      - unzip
