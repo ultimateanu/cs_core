@@ -8,3 +8,8 @@ addons:
       - g++
       - zlib1g-dev
       - unzip
+
+before_install:
+
+script:
+  - bazel build ...
