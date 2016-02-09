@@ -24,5 +24,6 @@ before_install:
 script:
   - /usr/bin/gcc --version
   - gcc --version
+  - g++ --version
   - bazel build ...
     #- bazel build --verbose_failures --spawn_strategy=standalone --genrule_strategy=standalone data_structures:demo
