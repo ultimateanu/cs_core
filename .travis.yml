@@ -20,4 +20,4 @@ before_install:
   - ./bazel-0.1.4-installer-linux-x86_64.sh --user
 
 script:
-  - bazel build ...
+  - bazel run data_structures:demo
