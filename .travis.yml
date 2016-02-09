@@ -1,6 +1,6 @@
 language: cpp
 
-  JAVA_HOME
+sudo: required
 
 addons:
   apt:
