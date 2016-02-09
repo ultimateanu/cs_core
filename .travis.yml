@@ -12,8 +12,6 @@ addons:
       - gcc-4.8
       - g++-4.8
       - wget
-      - openjdk-7-jdk
-      - openjdk-7-source
       - pkg-config
       - zip
       - zlib1g-dev
@@ -24,4 +22,4 @@ before_install:
   - ./bazel-0.1.4-installer-linux-x86_64.sh --user
 
 script:
-  - bazel build --spawn_strategy=standalone --genrule_strategy=standalone data_structures:demo
+  - bazel build --verbose_failures --crosstool_top //tools/custom_crosstool:CROSSTOOL --spawn_strategy=standalone --genrule_strategy=standalone data_structures:demo
