@@ -24,4 +24,4 @@ before_install:
   - ./bazel-0.1.4-installer-linux-x86_64.sh --user
 
 script:
-  - bazel run data_structures:demo
+  - bazel build --spawn_strategy=standalone --genrule_strategy=standalone data_structures:demo
