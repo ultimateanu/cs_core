@@ -28,5 +28,8 @@ install:
 script:
   - /usr/bin/gcc --version
   - /usr/bin/gcc-4.8 --version
+  - mv /usr/bin/gcc-4.8 /usr/bin/gcc
+  - /usr/bin/gcc --version
+  - /usr/bin/gcc-4.8 --version
   - bazel build ...
     #- bazel build --verbose_failures --spawn_strategy=standalone --genrule_strategy=standalone data_structures:demo
