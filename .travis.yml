@@ -10,8 +10,6 @@ addons:
       - zip
       - zlib1g-dev
       - unzip
-      - gcc-4.8
-      - g++-4.8
       - wget
       - zlib1g-dev
 
