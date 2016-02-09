@@ -9,12 +9,10 @@ addons:
       - ubuntu-toolchain-r-test
     packages:
       - pkg-config
-      - zip
-      - zlib1g-dev
-      - unzip
-        #- wget
-        #- zlib1g-dev
+        #- zip
       - g++-4.8
+      - zlib1g-dev
+        #- unzip
 
 before_install:
   - wget 'https://github.com/bazelbuild/bazel/releases/download/0.1.4/bazel-0.1.4-installer-linux-x86_64.sh'
