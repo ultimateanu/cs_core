@@ -1,7 +1,5 @@
 language: cpp
 
-sudo: required
-
 addons:
   apt:
     packages:
